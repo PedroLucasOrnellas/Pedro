@@ -41,7 +41,7 @@ async function mostrarPokemons(qtd){
                                     <p>${descricao}</p>
 
                                     <a href='/pokemon.html?id=${idP}' target='_blank'>
-                                        <button id="info">
+                                        <button id="maisInfo">
                                             Mais informações
                                         </button>
                                     </a>
