@@ -1,234 +1,63 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+/* // <uniquifier>: Use a unique and descriptive class name */
+/* // <weight>: Use a value from 200 to 800 */
+
 body {
-	line-height: 1;
-    background-color: rgb(218, 218, 218) !important;
-}
-ol, ul {
-	list-style: none;
-}
-a{
-    color: black;
-    text-decoration: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-.flex{
-    display: flex;
-    gap: 10px;
+  font-family: "Manrope", sans-serif;
+  background: rgb(36, 36, 36);
 }
 
-.principal{
-    background-color: white;
-    padding: 10px;
-}
-
-nav ul{
-    background-color: rgb(179, 179, 197);
-    padding: 5px 30px;
-    display: flex;
-    justify-content: space-around;
-    gap: 20px   ;
-    font-size: 20px;
+*{
     margin: 0;
+    box-sizing: border-box;
 }
-nav ul li a{
-    color: rgb(14, 14, 55) ;
-    font-weight: 500;
-}
-
-.carrossel{
-    display: block;
-    position: relative;
-    border: solid 1px rgb(139, 139, 139);
-    padding: 0 !important;
-}
-
-.legendaCarrossel{
-    background-color: rgb(179, 179, 197);
-    text-align: center;
-    padding: 4px;
-    font-size: 14px;
-}
-.imgCarrossel{
-    width: 100%;
-    height: 230px;
-    background-color: rgb(105, 105, 180);
-}
-
-.contador{
+header{
     display: flex;
-    position: absolute;
-    bottom: 10px;
-    left: 30px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+    background: #fff;
 }
 
-.numero{
-    background-color: white;
-    text-align: center;
-    height: 30px;
-    width: 30px;
-    font-size: 16px;
-    border-radius: 30px;
-    border: solid 1px black;
-    margin: 0 5px;
-    cursor: pointer;
-}
-
-.box{
-    border: solid 1px rgb(169, 169, 169);
-    margin-top: 20px;
-}
-.box img{
-    width: 100%;
-    height: 120px;
-    background-color: rgb(173, 173, 173);
-    display: block;
-}
-
-.conteudoBox{
-    padding: 10px;
-}
-.conteudoBox p{
-    margin-bottom: 35px;
-}
-.conteudoBox h2{
-    font-size: 18px!important;
-    font-weight: bold !important;
-}
-
-.botao{
-    width: 100%;
+.container{
     display: flex;
-    justify-content:right;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 30px;
 }
 
-.conteudoBox button{
-    display: block;
-    border: none;
-    padding: 5px 10px;
-    background-color: rgb(110, 72, 216);
-    color: white;
-    font-weight: 500;
-    margin: 10px;
-}
-
-.resumo h2{
-    font-size: 18px!important;
-    font-weight: bold !important;
-    text-align: center;
-    margin: 15px 0 20px 0;
-}
-.resumo{
-    border: solid 1px rgb(169, 169, 169);
-    margin: 10px 0;
-    padding: 10px;
-    background-color: rgb(218, 218, 218) !important;
-}
-
-.box2{
+.card{
+    background-color: rgb(153, 153, 153);
     display: flex;
     flex-direction: column;
-    margin: 10px 0;
-    border: solid 1px rgb(169, 169, 169);
-}
-
-.box2 div{
-    padding: 10px;
-}
-
-.box2 img{
-    width: 100%;
-    height: 220px;
-    background-color: rgb(173, 173, 173);
-    display: block;
-}
-
-.box2 span{
-    font-size: 16px!important;
-    font-weight: bold !important;
-    text-align: center;
-}
-
-footer{
-    margin: 10px 0;
-    display: flex !important;
-    flex-direction: row;
-    justify-content: space-around;
     align-items: center;
+    gap: 10px;
+    width: 250px;
+    height: 400px;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid rgb(173, 173, 173);
 }
 
-footer p{
-    margin: 0;
-}
-
-.icons{
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-}
-img{
+.foto{
+    background-color: brown;
+    height: 60%;
     width: 100%;
-    height: 100%;
+}
+    .foto img{
+        background-color: crimson;
+        width: 100%;
+        height: 100%;
+    }
+
+.titulo h2{
+    font-size: 20px;
 }
 
-@media(max-width:1000px){
-    .flex{
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .box{
-        min-width: 215px;
-        max-width: 48%;
-    }
-}
-
-@media(max-width:490px){
-    .box{
-        min-width: 215px;
-        max-width: 90%;
-    }
-
-    nav ul{
-        font-size: 16px;
-    }
-
-    footer{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
+.info{
+    width: 100%;
+    word-break: break-all;
 }
