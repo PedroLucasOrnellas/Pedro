@@ -1,5 +1,6 @@
 // https://pokeapi.co/api/v2/pokemon-species/{id or name}/ DESCRICAO
 let botao = document.getElementById('buscar');
+mostrarPokemons(10);
 
 function abrePagina(){
     let maisInfo = document.getElementById('info');
@@ -42,7 +43,7 @@ async function mostrarPokemons(qtd){
 
                                     <a href='/pokemon.html?id=${idP}' target='_blank'>
                                         <button id="maisInfo">
-                                            Mais informações
+                                            Mais Informações
                                         </button>
                                     </a>
                                 </div>
