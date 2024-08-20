@@ -26,6 +26,7 @@ body {
     border-radius: 5px;
     border: solid 1px #b7b7b7;
     outline: none;
+    width:70px;
 }
 #buscar{
     padding: 6px;
@@ -50,7 +51,7 @@ body {
     padding: 30px;
 }
 
-.card{
+.cards{
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
@@ -63,6 +64,7 @@ body {
     border-radius: 5px;
     text-align: center;
     border: 1px solid rgb(173, 173, 173);
+    cursor:pointer;
 }
 
 .foto{
@@ -70,6 +72,7 @@ body {
     width: 100%;
 }
     .foto img{
+        transition-duration:.3s;
         width: 80%;
         height: 100%;
     }

@@ -26,7 +26,7 @@ async function exibe(id){
 document.addEventListener('DOMContentLoaded', function() {
     const parametrosUrl = new URLSearchParams(window.location.search);
 
-    const id = parametrosUrl.get('id'); // '2'
+    const id = parametrosUrl.get('id');
 
     exibe(id);
 
