@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testar API de Carros</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        input, button {
+            margin: 5px 0;
+            padding: 10px;
+            font-size: 16px;
+        }
+        #carList {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testar API de Carros</h1>
+    
+    <h2>Criar Carro</h2>
+    <form id="createCarForm">
+        <input type="text" id="createCarModel" placeholder="Modelo" required>
+        <input type="text" id="createCarBrand" placeholder="Marca" required>
+        <input type="number" id="createCarYear" placeholder="Ano" required>
+        <input type="number" id="createCarValue" placeholder="Valor" required>
+        <input type="text" id="createCarFeatures" placeholder="Características" required>
+        <button type="submit">Criar Carro</button>
+    </form>
+    
+    <h2>Listar Carros</h2>
+    <button id="listCarsButton">Listar Carros</button>
+    <div id="carList"></div>
+    
+    <h2>Atualizar Carro</h2>
+    <form id="updateCarForm">
+        <input type="text" id="updateCarId" placeholder="ID do Carro" required>
+        <input type="text" id="updateCarModel" placeholder="Novo Modelo">
+        <input type="text" id="updateCarBrand" placeholder="Nova Marca">
+        <input type="number" id="updateCarYear" placeholder="Novo Ano">
+        <input type="number" id="updateCarValue" placeholder="Novo Valor">
+        <input type="text" id="updateCarFeatures" placeholder="Novas Características">
+        <button type="submit">Atualizar Carro</button>
+    </form>
+    
+    <h2>Deletar Carro</h2>
+    <form id="deleteCarForm">
+        <input type="text" id="deleteCarId" placeholder="ID do Carro" required>
+        <button type="submit">Deletar Carro</button>
+    </form>
+    
+    <script src="script.js"></script>
+</body>
+</html>
